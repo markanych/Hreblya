@@ -62,7 +62,7 @@
             border-radius: 20px;
         }
 
-        img
+        .herb
         {
             /* display: block; */
             width: 260px;
@@ -74,13 +74,15 @@
 
 /* Початок секцій */
 
+/* Інфографіка */
+
 section
     {
-        /* border: #333 solid 2px; */
+        border: #333 solid 2px;
         background-color: rgb(241, 240, 236);
         border-radius: 50px;
         margin: 25px 0;
-        padding: 5% 50px;
+        padding: 25px 5%;
         text-align: center;
     }
     .info
@@ -88,7 +90,8 @@ section
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            margin-top: 20px;
+            /* margin-top: 20px; */
+            /* border: #333 solid 2px; */
         } 
         .icon-style
         {
@@ -104,13 +107,19 @@ section
         .icons
         {
             width: 50px;
-            margin-bottom: 20px;
-            background-color: rgb(241, 240, 236);
-            /* border-radius: 50px; */
+        }
+
+        .zaholovok
+        {
+            font-size: 20pt;
+            font-weight: bold;
+            color: rgb(232, 232, 252);
+            margin-top: 10px;
         }
 
     .info-block
         {
+            /* border: #333 solid 2px; */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -119,19 +128,107 @@ section
             margin: 15px;
             border-bottom: rgb(102, 103, 171) solid 10px;
             background-color: rgb(136, 176, 75);
-            color: rgb(241, 240, 236);
+            /* color: rgb(241, 240, 236); */
             border-radius: 20px;
             padding: 15px 25px;
             font-size: 18pt;
-            font-weight: bold;
+            /* font-weight: bold; */
             /* text-align: center; */
-        }  
+        }
+        
+/* Кінець інфографіки */
+
+/* Кнопка "вгору" */
+
+/* Плавна прокрутка для всієї сторінки (працює навіть без JS) */
+    html {
+            scroll-behavior: smooth;
+        }
+
+    #btnUp {
+         /* border: orangered solid 2px; */
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+         width: 110px;
+         height: 35px;
+         border-radius: 25px;
+         background: rgb(136, 176, 75);
+         color: white;
+         border: none;
+         cursor: pointer;
+         display: none; /* Спочатку ховаємо */
+         font-size: 18px;
+         font-weight: bold;
+         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+         z-index: 1000;
+       }
+
+/* Кінець коду кнопки "вгору" */
+
+/* Картки */
+
+    .card-link 
+        {
+            text-decoration: none; /* Прибираємо підкреслення тексту */
+            color: inherit;        /* Колір тексту як у батьківського елемента */
+            display: inline-block; /* Щоб посилання облягало картку */
+        }
+
+    .card 
+        {
+            width: 260px;
+            height: 260px;
+            padding: 10px;
+            margin: 20px;
+            /* border: 1px solid #ddd; */
+            border-radius: 20px;
+            background-color: rgb(136, 176, 75);
+  
+            /* Плавність появи тіні */
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Контейнер для фото */
+    .card-image 
+        {
+            width: 230px;
+            height: 50%;
+            overflow: hidden;
+            border-radius: 65px;
+            margin: 10px auto; /* Центруємо контейнер */
+        }
+
+    .card-image img 
+        {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Фото заповнює область без спотворення */
+            transition: transform 0.5s ease;
+        }
+
+    .card-content 
+        {
+            margin-top: 15px;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+    .card:hover 
+        {
+            /* Параметри тіні: зміщення X, зміщення Y, розмиття, колір */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.30);
+            
+            /* Додатково: легке підняття картки вгору */
+            transform: translateY(-5px);
+        }
+/* Кінець карток */
 
     #proselo
         {
             display: block;
             background-color: rgb(241, 240, 236);
-            padding: 5% 50px;
+            padding: 50px 5%;
             margin: 25px 0;
             border-radius: 50px;
             font-size: 14pt;
