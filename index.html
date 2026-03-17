@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт села Гребля</title>
     <link rel="stylesheet" href="style.css">
-    <!-- <script src="main.js"></script> -->
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -24,30 +24,74 @@
     <section>
             <h3>На нашому сайті ви зможете дізнатися більше про історію села, його традиції, визначні місця та події. Ми також пропонуємо інформацію про місцеві підприємства, послуги та можливості для туризму.</h3>
             <h3>Дякуємо за ваш інтерес до нашого села!</h3>
+
         <div class="info">
-            <div class="info-block">
-                    <div class="icon-style">
-                        <img class="icons" src="icons/calendar4-event.svg" alt="">
-                    </div>
-                    Рік заснування: <br> 1490
-            </div>
+
             <div class="info-block">
                 <div class="icon-style">
-                    <div>
-                        <img class="icons" src="icons/people.svg" alt="">
-                    </div>
+                    <img class="icons" src="icons/calendar4-event.svg" alt="">
                 </div>
-                    Кількість жителів: <br> 1 312
+                    Рік заснування: <br> <span class="zaholovok">1 490</span>
             </div>
-                <div class="info-block">
-                    <div class="icon-style">
-                        <img class="icons" src="icons/map.svg" alt="">
-                    </div>
-                    Площа, км²: <br> 3 948
+
+            <div class="info-block">
+                <div class="icon-style">
+                    <img class="icons" src="icons/people.svg" alt="">
                 </div>
+                    Жителів: <br> <span class="zaholovok">1 312</span>
             </div>
+
+            <div class="info-block">
+                <div class="icon-style">
+                    <img class="icons" src="icons/map.svg" alt="">
+                </div>
+                    Площа: <br> <span class="zaholovok">3 948 км²</span>
+            </div>
+
+            <!-- <div class="info-block">
+                <div class="icon-style">
+                    <img class="icons" src="icons/map.svg" alt="">
+                </div>
+                    Новини: <br> <span class="zaholovok"> <a href="news.html">Читати новини</a> </span>
+            </div> -->
+
         </div>     
     </section>
+
+    <section id="cards-container">
+           <h2>Побут нашого села</h2>
+
+        <div class="info">
+
+            <a href="news.html" class="card-link">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/news.png" alt="Новини села, логотип">
+                    </div>
+                    <div class="card-content">
+                        <h2>Новини села</h2>
+                        Дізнайтеся про останні події та новини в нашому селі.
+                    </div>
+                </div>
+            </a>
+
+            <a href="news.html" class="card-link">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="img/dolyna_teplyts.jpg" alt="Долина теплиць, логотип">
+                    </div>
+                    <div class="card-content">
+                        <h2>Долина теплиць</h2>
+                        Крафтова продукція долини теплиць.
+                    </div>
+                </div>
+            </a>
+
+        </div>     
+    </section>
+
+ <button id="btnUp" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Вгору</button>
+
 
     <div id="proselo">
     <h2>Про село Гребля</h2> <br>
