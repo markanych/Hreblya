@@ -62,11 +62,11 @@
             border-radius: 20px;
         }
 
-        .herb
+        .herb 
         {
             /* display: block; */
             width: 260px;
-            margin: 20px;
+            margin: 20px auto:
             /* border: #333 solid 2px; */
         }
 
